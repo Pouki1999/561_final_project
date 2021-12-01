@@ -1,0 +1,60 @@
+BLASTN 2.12.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+           1 sequences; 283,432 total letters
+
+
+
+Query= pos105200_105254_m131001_013033_42158_c10051971255000000182308080927
+1441_s1_p0/46985/0_8905
+
+Length=8905
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+FR799588.2_Leishmania_donovani,_chromosome_1                          82.4    4e-16
+
+
+> FR799588.2_Leishmania_donovani,_chromosome_1
+Length=283432
+
+ Score = 82.4 bits (44),  Expect = 4e-16
+ Identities = 54/58 (93%), Gaps = 3/58 (5%)
+ Strand=Plus/Plus
+
+Query  2234    CACACTCGCACCGCTCGCATCTTTTCGTTTTGTTTCTGTGACTGTTTTACTTTCTATC  2291
+               ||||| |||| ||||||||||||||||||||||||||||||| ||||||||||| |||
+Sbjct  105200  CACACACGCA-CGCTCGCATCTTTTCGTTTTGTTTCTGTGAC-GTTTTACTTTC-ATC  105254
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2517531030
+
+
+  Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+    Posted date:  Unknown
+  Number of letters in database: 283,432
+  Number of sequences in database:  1
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

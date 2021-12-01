@@ -1,0 +1,80 @@
+BLASTN 2.12.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+           1 sequences; 283,432 total letters
+
+
+
+Query= pos273133_273392_m131001_034946_42158_c10051971255000000182308080927
+1442_s1_p0/74195/0_3569
+
+Length=3569
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+FR799588.2_Leishmania_donovani,_chromosome_1                          113     6e-26
+
+
+> FR799588.2_Leishmania_donovani,_chromosome_1
+Length=283432
+
+ Score = 113 bits (61),  Expect = 6e-26
+ Identities = 236/309 (76%), Gaps = 57/309 (18%)
+ Strand=Plus/Plus
+
+Query  2768    CACGTAGATCGGGCCTAATGCGCGCCAGAAGAATGCTGCGCCTGCTGCGGCTCCGTGCCA  2827
+               ||||||||||||||||  |||||||| || |    |||||||||||||||||||||||||
+Sbjct  273133  CACGTAGATCGGGCCT--TGCGCGCC-GA-GC-GCCTGCGCCTGCTGCGGCTCCGTGCCA  273187
+
+Query  2828    TCGGTCG-CGCCTTCCTTGGGGCC-GGAAGG-AAGCCGAATCGCACCCCTCCCCAACCCG  2884
+               |||  || |||||||||||||||| ||||||  | || |  ||| |||| ||||| ||| 
+Sbjct  273188  TCG--CGCCGCCTTCCTTGGGGCCCGGAAGGGGAACCAAGCCGCCCCCC-CCCCA-CCC-  273242
+
+Query  2885    TCAGAGACGGATGCCGCTCCCATGCCCGCCGCCACTCCTCAATCGTGATGAAGTACGCAG  2944
+                 ||   |   |||| | |||   || |||||| | | |   |  |||| |    |||||
+Sbjct  273243  --AG---CTTTTGCC-CACCC---CC-GCCGCC-C-C-T---T--TGAT-AC---CGCAG  273280
+
+Query  2945    CTTGTGGACGCGCGGAAATAGCAACCGCCGA-CCGCAGGCGCCTTTGAAATAAGCCGGCT  3003
+               |||| |  |||||||||| |||  || |||| |||||||||||||| ||| |||||  | 
+Sbjct  273281  CTTG-G--CGCGCGGAAA-AGC--CC-CCGACCCGCAGGCGCCTTT-AAA-AAGCC--C-  273328
+
+Query  3004    TCAGCGAGCAGATACTGC-GGGGTGGTTGCCAGAATCCCAATGCG-CGCCGAACGT-CCC  3060
+                |||||  || ||||||| |||||||||||||||||||||| ||| ||||  |||| |||
+Sbjct  273329  -CAGCG--CA-ATACTGCAGGGGTGGTTGCCAGAATCCCAA-GCGGCGCCCCACGTGCCC  273383
+
+Query  3061    -GCGCTACA  3068
+                ||||||||
+Sbjct  273384  CGCGCTACA  273392
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1005542228
+
+
+  Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+    Posted date:  Unknown
+  Number of letters in database: 283,432
+  Number of sequences in database:  1
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

@@ -1,0 +1,115 @@
+BLASTN 2.12.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+           1 sequences; 283,432 total letters
+
+
+
+Query= pos175129_175340_m131001_013033_42158_c10051971255000000182308080927
+1441_s1_p0/40218/3162_15562
+
+Length=12400
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+FR799588.2_Leishmania_donovani,_chromosome_1                          171     1e-42
+
+
+> FR799588.2_Leishmania_donovani,_chromosome_1
+Length=283432
+
+ Score = 171 bits (92),  Expect = 1e-42
+ Identities = 201/246 (82%), Gaps = 38/246 (15%)
+ Strand=Plus/Plus
+
+Query  2370    GACGCCGACGGTGGCAGAGACGCAGCGGCGCTGTCGCGGCTGCCAAAGCCGGCATGGATC  2429
+               ||||||||||||||||||||||||||||||||||||||||||||| ||| ||| ||||||
+Sbjct  175129  GACGCCGACGGTGGCAGAGACGCAGCGGCGCTGTCGCGGCTGCCACAGC-GGC-TGGATC  175186
+
+Query  2430    GCACCTTCAAACCGCCCTCCGACCGCCAcccccccACTCCTCCGCCCCCTGACTTTCTCT  2489
+               |||||||||| | |||||| |||    ||    |||||||| ||||  ||||    | ||
+Sbjct  175187  GCACCTTCAA-C-GCCCTC-GAC----ACG---CCACTCCTGCGCCTACTGAG---C-CT  175232
+
+Query  2490    CCACCTCGAGCATTTACCTCTCCTGCGCAGGCGCCCGAAGGAAA-G-TGGCAAGTGCCGG  2547
+               |      ||||||| |||      ||||| |||||||||||||| | |||| ||||||||
+Sbjct  175233  C------GAGCATT-ACC------GCGCA-GCGCCCGAAGGAAAAGCTGGC-AGTGCCGG  175277
+
+Query  2548    CGTATCGCCCGCGG-ACCGAAGCTGA-CAGACCAGGCAGCAAGCGACGGTGAACCGCCCC  2605
+               |||||||||||||| ||||||||||| ||||  ||||||| |||||||||||||||||||
+Sbjct  175278  CGTATCGCCCGCGGGACCGAAGCTGAGCAGAG-AGGCAGC-AGCGACGGTGAACCGCCCC  175335
+
+Query  2606    GCCATG  2611
+               || |||
+Sbjct  175336  GC-ATG  175340
+
+
+ Score = 113 bits (61),  Expect = 2e-25
+ Identities = 69/72 (96%), Gaps = 3/72 (4%)
+ Strand=Plus/Plus
+
+Query  3433    TACGTGGAAGGTTGAGCGGC-TCGACG-CTGCTCCGAGCGTGTGGTGAAGCAGGCGACTT  3490
+               ||||||||||| |||||||| |||||| ||||||||||||||||||||||||||||||||
+Sbjct  175830  TACGTGGAAGG-TGAGCGGCGTCGACGTCTGCTCCGAGCGTGTGGTGAAGCAGGCGACTT  175888
+
+Query  3491    CCTTGCGTACGC  3502
+               ||||||||||||
+Sbjct  175889  CCTTGCGTACGC  175900
+
+
+ Score = 106 bits (57),  Expect = 3e-23
+ Identities = 97/114 (85%), Gaps = 11/114 (10%)
+ Strand=Plus/Plus
+
+Query  133     CTGCGCGACC-TCTCTCCTCACCATACACAACCGTGCCTCGATGCGTAGCAGAGGGCGAG  191
+               ||||||||||  |||| |||  | ||| |  |||||||||||||||||||||||||||||
+Sbjct  173467  CTGCGCGACCGCCTCT-CTC-GC-TAC-C-GCCGTGCCTCGATGCGTAGCAGAGGGCGAG  173521
+
+Query  192     ATGGTGGAATAGTGAC-AACGACCGA-GATGGCACGGAGGCCCGG-ACGGCCGC  242
+               |||||| | ||||||| |||||| || ||||||||||||| |||| ||| ||||
+Sbjct  173522  ATGGTGAAGTAGTGACCAACGAC-GAGGATGGCACGGAGGACCGGGACG-CCGC  173573
+
+
+ Score = 93.5 bits (50),  Expect = 3e-19
+ Identities = 96/116 (83%), Gaps = 12/116 (10%)
+ Strand=Plus/Plus
+
+Query  4131    GCCCTTCTACGCCGCTTCCTCCGACCCTCCGCGGAGAGGTGTGGG--TGCCTCCTGGTAG  4188
+               |||||||||| ||||||||||||||||||||||||||||||||||  ||||||||| |  
+Sbjct  176295  GCCCTTCTAC-CCGCTTCCTCCGACCCTCCGCGGAGAGGTGTGGGGGTGCCTCCTG-TGC  176352
+
+Query  4189    GTTGTCCGTTTATACGCCGTGCGCC-GG-AGGGCCTCTCTCGTCCACTC-GTCCAC  4241
+               || | |||   || ||| ||||||| || ||| |||| |||| |||| | ||||||
+Sbjct  176353  GT-G-CCGCC-ATCCGC-GTGCGCCCGGGAGGCCCTC-CTCGCCCACGCCGTCCAC  176403
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3508048980
+
+
+  Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+    Posted date:  Unknown
+  Number of letters in database: 283,432
+  Number of sequences in database:  1
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

@@ -1,0 +1,64 @@
+BLASTN 2.12.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+           1 sequences; 283,432 total letters
+
+
+
+Query= pos163301_163387_m130930_231120_42158_c10051971255000000182308080927
+1440_s1_p0/127315/10041_15521
+
+Length=5480
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+FR799588.2_Leishmania_donovani,_chromosome_1                          87.9    5e-18
+
+
+> FR799588.2_Leishmania_donovani,_chromosome_1
+Length=283432
+
+ Score = 87.9 bits (47),  Expect = 5e-18
+ Identities = 82/97 (85%), Gaps = 10/97 (10%)
+ Strand=Plus/Plus
+
+Query  5065    GCAAGCCGCGGGCGGTGATATGGCGTCCCGCTGGTGGTGTGGGTCTGGTGGCTGGCTGAA  5124
+               |||||||||||||||||| ||||||||  ||||||||||  |||  ||||| ||| ||  
+Sbjct  163301  GCAAGCCGCGGGCGGTGAGATGGCGTC--GCTGGTGGTGGTGGT--GGTGG-TGG-TGGT  163354
+
+Query  5125    TACAACGAGCATGCACACATACACAGCTGGCAGTCTG  5161
+               | ||   ||||||||||||||||||||||||||||||
+Sbjct  163355  T-CA---AGCATGCACACATACACAGCTGGCAGTCTG  163387
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1547140649
+
+
+  Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+    Posted date:  Unknown
+  Number of letters in database: 283,432
+  Number of sequences in database:  1
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

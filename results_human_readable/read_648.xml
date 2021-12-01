@@ -1,0 +1,100 @@
+BLASTN 2.12.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+           1 sequences; 283,432 total letters
+
+
+
+Query= pos277544_278134_m131001_013033_42158_c10051971255000000182308080927
+1441_s1_p0/39062/4460_8837
+
+Length=4377
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+FR799588.2_Leishmania_donovani,_chromosome_1                          407     3e-114
+
+
+> FR799588.2_Leishmania_donovani,_chromosome_1
+Length=283432
+
+ Score = 407 bits (220),  Expect = 3e-114
+ Identities = 521/649 (80%), Gaps = 89/649 (14%)
+ Strand=Plus/Plus
+
+Query  197     CGC-TGCGTCGATAATTCG-TCATCGCTGTGCACACACGCCCGGGTCGGC-CCTGTTTGT  253
+               ||| ||||||||||||||| |||||||||||||| ||| |||   ||||| |||||||||
+Sbjct  277544  CGCGTGCGTCGATAATTCGCTCATCGCTGTGCAC-CAC-CCC---TCGGCGCCTGTTTGT  277598
+
+Query  254     GTGTCCGTTTCGTAGGTTTGGTTTTTCTCTCTTCATAGCAATCAGAATACTCTCACATCA  313
+               |||||||||||||||| |||||||| ||||||| |||| | |||||||| |||| ||| |
+Sbjct  277599  GTGTCCGTTTCGTAGG-TTGGTTTTGCTCTCTT-ATAG-A-TCAGAATA-TCTC-CAT-A  277651
+
+Query  314     CACAGCGGTC-GAACAACGAA-CCGACCCC-AT-ATTGCCGAC-TCATAGGTAGTACGAG  368
+               || ||| ||| |||||||||| ||| |||| || | ||||  | || || |||  ||  |
+Sbjct  277652  CA-AGCCGTCAGAACAACGAAGCCGCCCCCCATCACTGCCTCCCTC-TACGTAC-ACC-G  277707
+
+Query  369     TTTGTT-CTTCTTTTGTTCGTGGCTGCAGAGTAAACCTGTGCACATTCTGCGCAGACATA  427
+               || ||| | | |||| |||||||||||||||||| ||||||||   ||||||||||||||
+Sbjct  277708  TT-GTTGCCT-TTTT-TTCGTGGCTGCAGAGTAA-CCTGTGCA---TCTGCGCAGACATA  277760
+
+Query  428     CTC-CCCACGGAAAACAGACATCGACCGAGAACACGAACCCAACAGAAAACGGAACGTGC  486
+               ||| ||||| | | |||||||||||| || | |||||||| || ||||| || | |||||
+Sbjct  277761  CTCGCCCACCGCACACAGACATCGACAGACA-CACGAACCGAA-AGAAA-CGCA-CGTGC  277816
+
+Query  487     CCGAGAATGAGCAGACA-GCGCACGTGCCTTCTGTGAGAATCTCCCACTGC-CAT-T--G  541
+               | ||||| ||||||||| ||||||||||||||||||||||||||||||||| ||| |  |
+Sbjct  277817  C-GAGAA-GAGCAGACAGGCGCACGTGCCTTCTGTGAGAATCTCCCACTGCTCATCTTCG  277874
+
+Query  542     ATGCGT-TCTTCTTTTCACCTGCATCGTTCTCAGCCGCCGACGACCAGGTGCGCATCT-C  599
+                | |   || ||||||| ||||||||||||||  ||    |||    ||||  ||||| |
+Sbjct  277875  GTTCCCCTC-TCTTTTCCCCTGCATCGTTCTCT-CC----ACG----GGTGTACATCTGC  277924
+
+Query  600     GCGATCTCCGT-GT-CA-CGAGTC-TAGTGAAGTCTCGTCTCGCCT-CGTTCTGCTGCCG  654
+               |||||||| || || |  |||||| ||||||||||||||||||||| |||  |||| |||
+Sbjct  277925  GCGATCTC-GTCGTTCCTCGAGTCGTAGTGAAGTCTCGTCTCGCCTTCGTCTTGCT-CCG  277982
+
+Query  655     CATATCGTTCCGCCTTCCTCCTTTGAAAGTTAT-ACTCGTCC-GCTC-TCAAATACTAGC  711
+               ||||||||  |||||||||||||||   ||||| ||| |||| |||| |||||||  |||
+Sbjct  277983  CATATCGT--CGCCTTCCTCCTTTGGC-GTTATTACT-GTCCCGCTCGTCAAATA--AGC  278036
+
+Query  712     TCGACACTCTGTC-TCCGTCGTTTGTGCGAGGTCAGCTGCTTCTCT-TCTCCA-T-CCGC  767
+               |||||| |||||| ||||| | ||||||||| |  ||   |||||| ||| || | || |
+Sbjct  278037  TCGACA-TCTGTCCTCCGT-GATTGTGCGAG-T--GC-CTTTCTCTGTCTTCACTTCCTC  278090
+
+Query  768     GGTGGCGTGTGGTG-TG-TTGCGCACGTTTTTCACGAGATTCCTCGTAG  814
+               |||| ||| ||||| || ||||||   |||||   ||||||||| ||||
+Sbjct  278091  GGTG-CGTCTGGTGGTGGTTGCGCCTCTTTTT---GAGATTCCT-GTAG  278134
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1234538316
+
+
+  Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+    Posted date:  Unknown
+  Number of letters in database: 283,432
+  Number of sequences in database:  1
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

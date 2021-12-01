@@ -1,0 +1,318 @@
+BLASTN 2.12.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+           1 sequences; 283,432 total letters
+
+
+
+Query= pos64691_61931_m131001_013033_42158_c1005197125500000018230808092714
+41_s1_p0/15884/0_7661
+
+Length=7661
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+FR799588.2_Leishmania_donovani,_chromosome_1                          2209    0.0  
+
+
+> FR799588.2_Leishmania_donovani,_chromosome_1
+Length=283432
+
+ Score = 2209 bits (1196),  Expect = 0.0
+ Identities = 2610/3193 (82%), Gaps = 495/3193 (16%)
+ Strand=Plus/Minus
+
+Query  10     GGG-GCGTCCGCGCGCAAACTGCGCAAGGGAGAGATGCTCCGAAGGATCGACGGT-TGT-  66
+              ||| |||||||||||||| ||||||    ||| || ||||||||||||||||||| ||| 
+Sbjct  64691  GGGCGCGTCCGCGCGCAA-CTGCGC----GAG-GA-GCTCCGAAGGATCGACGGTGTGTA  64639
+
+Query  67     TGA-GTAA-CGACAACGCATGCGT-CTGACGGAGGCGGTGTGACGCGGACGCGGCGG-CC  122
+              ||| |||| ||||||||||||||| ||||||||||||||| |||||||||||||||| ||
+Sbjct  64638  TGACGTAAGCGACAACGCATGCGTGCTGACGGAGGCGGTG-GACGCGGACGCGGCGGGCC  64580
+
+Query  123    GCGACCGAAGCCGCAGCTGGCGCACT-GCATTC-G-CTCGCCGAGAGC-CACGT-GCGCT  177
+              |||| ||||| ||||||||||||||| || ||| | ||||||| |||| ||||| |||||
+Sbjct  64579  GCGA-CGAAG-CGCAGCTGGCGCACTCGCCTTCGGCCTCGCCG-GAGCGCACGTGGCGCT  64523
+
+Query  178    CAGGGCGCTCTGTCCTTGCCATCTTCATGCAGCGCCTCCGCCAAGAGCAATCGCGCTGTC  237
+              ||  | ||||||| || ||||    |   | || | | || | | ||| ||  |||||||
+Sbjct  64522  CA--G-GCTCTGT-CTCGCCA----C---C-GC-CAT-CG-C-A-AGC-AT--CGCTGTC  64483
+
+Query  238    CCAGCAGGGCGGCTGGGCGCCGCGTCGCG-AGCCGCT-A-TTGGCGGCGAGTAACAGCAA  294
+              |||||||| | ||| |||| ||||| ||| ||||||| |  |||| || ||  | |||||
+Sbjct  64482  CCAGCAGG-C-GCT-GGCG-CGCGT-GCGCAGCCGCTCAGATGGC-GC-AG-GA-AGCAA  64432
+
+Query  295    CGGATGAGCTGCTCGGCCGGCATGGGCCGCCAGGGTCCGACAT-GAGCATACGCTTGCAC  353
+              | |||||  |||||   ||||    |||||| | || |||||| ||| ||||||||||  
+Sbjct  64431  C-GATGA--TGCTC-CTCGGC----GCCGCC-GCGT-CGACATAGAGGATACGCTTGCCA  64382
+
+Query  354    CCGTACATGTCGCCACAGAGGGCTGCGGCGCTTCCGCGAAATCCTGTGGA-GCG-TCGAC  411
+              |||||||||||||||||||||||||||||||||||||||| ||||||||| ||| |||||
+Sbjct  64381  CCGTACATGTCGCCACAGAGGGCTGCGGCGCTTCCGCGAA-TCCTGTGGAGGCGTTCGAC  64323
+
+Query  412    GCCGGCTGCACCGCATGAACATCGCCGGCGACATCTCCCGGTGGCCCGTGCTGGCGGGCC  471
+              | |||||||| ||||||||||| ||||||||||||||| ||||| ||||||| ||||| |
+Sbjct  64322  G-CGGCTGCA-CGCATGAACAT-GCCGGCGACATCTCC-GGTGG-CCGTGCT-GCGGGGC  64269
+
+Query  472    ACCCCCAGCATCCGCAGATAATCCGCCGTTCCAAGTC-CTTCTCTCTGCCACCCGTGGCC  530
+              |  |||||||| ||||| |||  ||||||| |  ||| ||||||||||||| ||||| ||
+Sbjct  64268  A--CCCAGCAT-CGCAG-TAACTCGCCGTTTCC-GTCGCTTCTCTCTGCCAGCCGTG-CC  64215
+
+Query  531    AGCGAAAACCCCGACGACA-CACTGATGAGCCAGTTTGAGGGCCTGCACGAGCGGCATCC  589
+              | ||   |   |||||||| ||||||||||||||||||||||| ||||||||| ||||| 
+Sbjct  64214  A-CG---A---CGACGACACCACTGATGAGCCAGTTTGAGGGC-TGCACGAGC-GCATCA  64164
+
+Query  590    CTGGCGCGGTGCCGCCCCACGTCCGAACAGAGGTGACGAAAAGCGATGACGGCCAGAGAT  649
+              || | ||   |  ||||||||||||| ||||||||||   | |||||||| | |||||||
+Sbjct  64163  CT-G-GC---G--GCCCCACGTCCGA-CAGAGGTGACTGCAGGCGATGAC-G-CAGAGAT  64114
+
+Query  650    GGTGCCCCGTCGCCAATTATCCCCTGCTGGCCCGACTCGCCTTGCGCCACGCCGACCGAC  709
+              ||||  |||||||| ||||| |||||||||  ||||||| |||||| |||||||| ||||
+Sbjct  64113  GGTG--CCGTCGCC-ATTAT-CCCTGCTGG-GCGACTCG-CTTGCG-CACGCCGA-CGAC  64062
+
+Query  710    GCCCCGTTTTGTCGCCAGCCAGCAGCAGCCGTGGCCAAGGCGC-GGCAAGCGATGGCTGC  768
+              |  ||||||||||| |||| |||||||||||||||   || || ||||||||||||||||
+Sbjct  64061  G--CCGTTTTGTCGGCAGC-AGCAGCAGCCGTGGCACGGGGGCGGGCAAGCGATGGCTGC  64005
+
+Query  769    AGCTTCCGCCGACCTTCGCATCCCCTGCCCCTCCTAGCTTTTGAGAAAGTGTGGATGGGT  828
+              |||| ||||||| ||||||||  |||||| || |||||||||||||| ||||||||||||
+Sbjct  64004  AGCT-CCGCCGA-CTTCGCAT--CCTGCCGCT-CTAGCTTTTGAGAA-GTGTGGATGGGT  63951
+
+Query  829    T-GCTCGCCGCGcccccctgcccccccctccctgctc-cccTGTCCTCGCCTCCGTCCTG  886
+              | |||| ||| || |||||    ||||||  ||| || |||||| ||||||||||| | |
+Sbjct  63950  TTGCTC-CCG-GCGCCCCT----CCCCCT--CTG-TCACCCTGT-CTCGCCTCCGT-C-G  63903
+
+Query  887    ACCCTTTTGTTGTGCAGCGCTGCCCCGAAATGCTTCCCTTTTCT-TCCCGTTCTTC--TT  943
+              ||||||||| |||||||||||||||    |||||| |||||||| |||||||||||  ||
+Sbjct  63902  ACCCTTTTG-TGTGCAGCGCTGCCC----ATGCTT-CCTTTTCTCTCCCGTTCTTCTTTT  63849
+
+Query  944    CGG-TT-CTCTACCCGCACTCGAGTGCTCCGCACCCTCCTCCTACG-CCCTGTGCGTGCA  1000
+              ||| || ||| | |||||||||| |||| ||||||||||| ||||| |||||||||||||
+Sbjct  63848  CGGTTTCCTC-A-CCGCACTCGA-TGCT-CGCACCCTCCT-CTACGCCCCTGTGCGTGCA  63794
+
+Query  1001   CGGCAGGTGGTTGTGGGTGGCGGGTGCGTGCCATGTGTCGCGTGCGT-CATAAAGAGCGA  1059
+              ||||||||||||||||||||||||||||||| |||||| |||||||| ||| |||| |||
+Sbjct  63793  CGGCAGGTGGTTGTGGGTGGCGGGTGCGTGC-ATGTGT-GCGTGCGTGCAT-AAGAACGA  63737
+
+Query  1060   CCTTCCTAGACGGCCCCTCCCCCACCTTATTGGTGTTTTCGCGTAACCCGCCACGAGTGC  1119
+              ||||| |||||||  | |||||||||   || ||||||||||||| | || |||||||||
+Sbjct  63736  CCTTC-TAGACGG--CTTCCCCCACC---TT-GTGTTTTCGCGTA-CTCG-CACGAGTGC  63686
+
+Query  1120   G-CGTCCGAACGCCTCAACCTTCGCCTACTCCCCACCCCACGTTTCTGTATGCCGCCCAA  1178
+              | ||| |||||| ||| | ||||| |||||   ||   ||||||| |||||||| ||| |
+Sbjct  63685  GTCGT-CGAACG-CTC-A-CTTCG-CTACT---CA---CACGTTT-TGTATGCC-CCC-A  63640
+
+Query  1179   ACGGAAAAGAAGAGCCCGACATGAGCCACGCACGCAAGCATGGGCACCGCCAAAGCCAAG  1238
+              |||||||||||||||| |||||||||||||||||||  |||||||| || | ||| ||| 
+Sbjct  63639  ACGGAAAAGAAGAGCC-GACATGAGCCACGCACGCA--CATGGGCA-CG-C-AAG-CAAC  63587
+
+Query  1239   CCCGCTTCGCACCTTCTTCTGCTGCCTAGTGTGC-CGTTTCCATGGTATCATGCGATCCG  1297
+               |||||||||||||||| |||||||||||||||| ||||||||||||||| ||||||| |
+Sbjct  63586  GCCGCTTCGCACCTTCT-CTGCTGCCTAGTGTGCTCGTTTCCATGGTATCCTGCGATC-G  63529
+
+Query  1298   TCCTCTGCGCGTGGTCGTG-ACGGCAAAGGTTGCGGGGTCT-CATGTTGGGCCccgtccg  1355
+              ||||||||||||||||||| || ||   |||||| |||||| |||| | |||||||||||
+Sbjct  63528  TCCTCTGCGCGTGGTCGTGGAC-GC---GGTTGC-GGGTCTCCATG-T-GGCCCCGTCCG  63476
+
+Query  1356   tccgtccgtcccgtccgtccTTTCCCTG-CCTACTGGACAATGTTCGCCCCGCCTGCA-C  1413
+              ||||||||||| |||||| | ||  ||| ||||||||| ||||||||  ||||||||| |
+Sbjct  63475  TCCGTCCGTCC-GTCCGT-C-TT--CTGCCCTACTGGA-AATGTTCG--CCGCCTGCACC  63424
+
+Query  1414   TGCGCTGACATCCCGTGAAGTGCCGATGCCCTTGCT-ATCCTCTTTCATGTCCTGGTGCC  1472
+              ||||||| || |||||||||||||||||| |||||| |||||||||| |||| |||||| 
+Sbjct  63423  TGCGCTG-CA-CCCGTGAAGTGCCGATGCGCTTGCTTATCCTCTTTCCTGTCTTGGTGC-  63367
+
+Query  1473   TGCTTGCG-ATCCG-AC-CACGTCACCCT-T-CCCTCACATAAATACAGCTTGTCCAGCC  1527
+              ||| |||| |||   || |||| | |||| | |||||||||| | |||||||| ||||||
+Sbjct  63366  TGC-TGCGCATCGACACTCACG-C-CCCTCTCCCCTCACATAGAAACAGCTTG-CCAGCC  63311
+
+Query  1528   CTTTCCCAATACCGTGTTGGTGTGCACTCCACGGACTCGCATCCGCTTCACCTGGAAGAC  1587
+              | || || ||| ||||||||||||||||| || | ||||||| ||||||| |||||||||
+Sbjct  63310  C-TT-CC-ATA-CGTGTTGGTGTGCACTC-AC-GCCTCGCAT-CGCTTCA-CTGGAAGAC  63259
+
+Query  1588   GCGCCGAGGGCACTCCGGCAGAGGAACCGCGTTC--CTCTCCCGGCGC-GATGTATCCTT  1644
+              |||||||||||||||  |||||||||||||||||  |||||||||||| |||||| ||  
+Sbjct  63258  GCGCCGAGGGCACTC--GCAGAGGAACCGCGTTCTCCTCTCCCGGCGCTGATGTA-CC--  63204
+
+Query  1645   TTGGCACGGCGCCTCCAGGATTCTCATGTTGGTCAGTTCTGCGTGGCGTGGCCTTGAGCA  1704
+                 ||||||||||| || |||||||   ||  |||||| |  |||| |||||| ||||||
+Sbjct  63203  ---GCACGGCGCCT-CA-GATTCTC---TT--TCAGTT-T--GTGG-GTGGCC-TGAGCA  63159
+
+Query  1705   GCGACCTCCCAGTAACACCGACGATCATTCTCCGTACCCTACCTGCACGCCTGTCACCTG  1764
+               | |   |||||| ||||| ||   ||   ||| |   ||| | | |||||| ||| |||
+Sbjct  63158  TC-A---CCCAGT-ACACCTAC-CCCA---TCC-T---CTA-C-G-ACGCCT-TCA-CTG  63117
+
+Query  1765   GCGAGAAGAACCGGTGCCCAATG-CGCCACTATCACGCACGTCCCAGCAGCAGCGGCCAG  1823
+              |||||||| |||||||||| ||| |||||||||||| ||||| |||||||||||||| ||
+Sbjct  63116  GCGAGAAG-ACCGGTGCCC-ATGCCGCCACTATCAC-CACGT-CCAGCAGCAGCGGC-AG  63062
+
+Query  1824   CTTCTC-GGG-T-TGGGGCCAGCTTGAAGT-GAGCTTGTCCCAAGGCGCTCCAGTGGATC  1879
+              |||||| ||| | ||||| ||||||||||| |||||| |  |||| | ||||||||||||
+Sbjct  63061  CTTCTCGGGGCTGTGGGG-CAGCTTGAAGTGGAGCTT-T--CAAGCCCCTCCAGTGGATC  63006
+
+Query  1880   ACACCCCTCACGAGAGCCGCACA-CGAGGAACTTCCTGCGGCCCAAAAACCATAAAACCG  1938
+              |||||| |||| |||  || ||| |||||||| |||||| |  |    | |      || 
+Sbjct  63005  ACACCC-TCAC-AGA--CG-ACATCGAGGAAC-TCCTGC-G--C----A-C------CC-  62967
+
+Query  1939   TCGGtttttttCTGGCTCGCGTCCGCAGCTC-GT-GCTCCACGGTAGTGTCTGGGCGCGC  1996
+               |       | |||||||||||||||||  | || ||| ||||||||||||||| || ||
+Sbjct  62966  AC-------TACTGGCTCGCGTCCGCAGTCCTGTCGCT-CACGGTAGTGTCTGG-CG-GC  62917
+
+Query  1997   GCGCCAAAAGCGCTGGCTACGGAGGCGGGCTCACGAGCCGTGCTA-TGCAACGGCGG-CC  2054
+              |||||   |||||| |||| ||| |||||||  | || |||| || ||||||||||| ||
+Sbjct  62916  GCGCC---AGCGCT-GCTAGGGA-GCGGGCT--C-AG-CGTG-TACTGCAACGGCGGCCC  62867
+
+Query  2055   CGAGGGGCAAGGCCTGCCGCGGCGTGACTCCCTGCTGAAGCCAGC-GCTTCTGGCAAGCT  2113
+              ||| |||||| |   ||| | || | ||||||||||||||| ||| |||||  |||| ||
+Sbjct  62866  CGA-GGGCAA-G---GCC-C-GC-T-ACTCCCTGCTGAAGC-AGCGGCTTC--GCAA-CT  62820
+
+Query  2114   TCCCCCGAGAATGGCCAATCCAAACCCCGCATAAGCACACTCATTCTTCCGTTTTGGGGT  2173
+              | | ||||||||||| ||| |  |   ||||||| ||||||| ||||| |||||| ||||
+Sbjct  62819  T-CTCCGAGAATGGC-AAT-C--A---CGCATAA-CACACTC-TTCTT-CGTTTT-GGGT  62772
+
+Query  2174   GCGCTTGGCGCCCCTGCCGAGGCGGGGTGCCAGGGTTGGCGGTCTGCTGCGTCATGGGCG  2233
+              || ||| | |  |||||||| ||||||||  | ||||||| |||||||||||||||||||
+Sbjct  62771  GC-CTTTG-G--CCTGCCGA-GCGGGGTG--A-GGTTGGC-GTCTGCTGCGTCATGGGCG  62721
+
+Query  2234   GATAGACGTGCGGGCGGTATGGTCCGTacacacacacacacacGTACGAGTTGATCCCAA  2293
+              |||||||||||||||||||||||| ||  ||||||||||||||||||||||||||| | |
+Sbjct  62720  GATAGACGTGCGGGCGGTATGGTC-GT--ACACACACACACACGTACGAGTTGATCGCCA  62664
+
+Query  2294   ACCAAGACAAGGGAGCAAACACCAAAGTCGCCGTGCCGAGGCGTTGGACCAATAACAGGT  2353
+              ||||||  ||  ||||||||||||||||||||||||||||||||||||||| || |||||
+Sbjct  62663  ACCAAGGAAA--GAGCAAACACCAAAGTCGCCGTGCCGAGGCGTTGGACCA-TA-CAGGT  62608
+
+Query  2354   TCGTCG-TGCGCCCATAGCGCGCCCGTGCGT-GGTGTGGCCCATTGCCTTCGTCGTCCCG  2411
+                |||| |||||  || || |||  |||||| ||||||||| ||||| ||||||||| | 
+Sbjct  62607  CTGTCGGTGCGC--AT-GCCCGC--GTGCGTTGGTGTGGCC-ATTGC-TTCGTCGTCGC-  62556
+
+Query  2412   TGGCCTGTTCTCTCTCCCTACACTGCTACGGGCTTCTCACTAGGCGGGACGGATACAGGA  2471
+              | || |||||||||||||||||||||||||| |||||| | |   |||||| ||||||| 
+Sbjct  62555  T-GCGTGTTCTCTCTCCCTACACTGCTACGG-CTTCTCGC-ACA-GGGACG-ATACAGG-  62502
+
+Query  2472   ACTCAACCGTGCATGCCTAGATTCGTCTGATGGTGGTGTTATTAGCGACCCGCGTGCCCC  2531
+              ||||| |||||||||| |||    | |||||||||| || |  ||  |||||||||  ||
+Sbjct  62501  ACTCACCCGTGCATGC-TAG----G-CTGATGGTGG-GT-AG-AG--ACCCGCGTG--CC  62455
+
+Query  2532   TCCGTCGCAGCGTCGCGCTCGTGGAGTCAAGTCCAACCCCGGTGGCGGCCGTGCTCGTTG  2591
+              ||||||||||||||||||||||||||||||||| | ||  | | ||||||||||||||||
+Sbjct  62454  TCCGTCGCAGCGTCGCGCTCGTGGAGTCAAGTC-A-CC--G-T-GCGGCCGTGCTCGTTG  62401
+
+Query  2592   CACGCGAACAGAAGAACGCAGCTGAAGCAAGGCCCATACCACTCGGACAGCCCGGCACAC  2651
+              ||||||| ||||||||||||||||||||| |||  |||| ||||||||| |  |||||||
+Sbjct  62400  CACGCGA-CAGAAGAACGCAGCTGAAGCA-GGC--ATAC-ACTCGGACA-C--GGCACAC  62349
+
+Query  2652   CGTCACAATGAGGGGAAGCGCTCCATGTTTGTTAGATTCGCTGCGCTCTAGGTAACCTCG  2711
+               | |||| ||| ||  ||||||| ||| ||||||||||||||||||||  | || |||  
+Sbjct  62348  GG-CACA-TGATGGATAGCGCTC-ATG-TTGTTAGATTCGCTGCGCTC--G-TA-CCT--  62299
+
+Query  2712   TTTCGTTGCGAGTGGCATGTCTGCAGACCGCTTGCTCCCCGTTTCATCTTACCGCAGCCC  2771
+              |  ||| || | | |||||||||||||| ||| ||  |  ||| ||||  ||||||||||
+Sbjct  62298  T--CGT-GC-ATT-GCATGTCTGCAGACGGCT-GCGTC--GTTCCATC--ACCGCAGCCC  62249
+
+Query  2772   ACTGCCGCCTTGCCGTCTTTCGCTGAAG-TC-TGCCTGTCGTTGTGCATCGAGGAGCTGA  2829
+              ||| |  | || ||||||||| |||||| || || |||||||||||||||||||||||||
+Sbjct  62248  ACT-CT-C-TT-CCGTCTTTCTCTGAAGGTCCTG-CTGTCGTTGTGCATCGAGGAGCTGA  62194
+
+Query  2830   GGCTGGAGACTGGAAAGGGGGGCGAGGAGGAGGGTTGTCGAGGGACGAAGGAGGCGGGCC  2889
+              | |||||||||| |||||||||  ||| | ||||| || ||||  |||| || |||||||
+Sbjct  62193  G-CTGGAGACTG-AAAGGGGGG--AGG-G-AGGGT-GTAGAGG--CGAA-GACGCGGGCC  62144
+
+Query  2890   AGCGCCCAGCATCTCCTCCCCCAGCGACTGCAGCTCGCTCGcccccttgctccgcctgac  2949
+              |||||  |||||||||||    | |||||||| |||||||||||| ||||| ||||||||
+Sbjct  62143  AGCGC--AGCATCTCCTC----A-CGACTGCA-CTCGCTCGCCCC-TTGCT-CGCCTGAC  62094
+
+Query  2950   tcttttcattcttctctc-cccctccccttctccctttcccctccctGAGCCGCCGGTAG  3008
+              |||||||||||||||||| ||||||||||||||  |||||| ||  |||  |||||||||
+Sbjct  62093  TCTTTTCATTCTTCTCTCGCCCCTCCCCTTCTC--TTTCCC-TC--TGA--CGCCGGTAG  62041
+
+Query  3009   ACACAAGAAAACCACCAGAGCCAGCACACGCCGCAAAACCATCGTAGATCGGGAAAACGG  3068
+              ||||  | | || || ||||| || ||||||| |||  | ||| | |   ||||     |
+Sbjct  62040  ACAC--GCAGAC-AC-AGAGC-AG-ACACGCC-CAA--C-ATCTT-G---GGGA-----G  62000
+
+Query  3069   GAGGACGGCGGCACAGGGCAGAAACATGCTAAAAGGATAGCAGCAGCAGCATCCGACAAC  3128
+              ||||||||||||||||| |||   ||||||||||||||||||||||||||||| ||||||
+Sbjct  61999  GAGGACGGCGGCACAGG-CAGC--CATGCTAAAAGGATAGCAGCAGCAGCATC-GACAAC  61944
+
+Query  3129   GAA-CCG-CGACA  3139
+              ||| ||| |||||
+Sbjct  61943  GAAACCGACGACA  61931
+
+
+ Score = 230 bits (124),  Expect = 1e-60
+ Identities = 256/309 (83%), Gaps = 51/309 (17%)
+ Strand=Plus/Minus
+
+Query  3716   GGAGACCTTCTTCGCGCACCCTCCACTACTGCAGCCACCCG-CCCTCGTCTACCCCGCTC  3774
+              ||||||||||||||||||||    |||||||||  | |||| ||||| ||||  || |||
+Sbjct  61568  GGAGACCTTCTTCGCGCACC----ACTACTGCA--C-CCCGCCCCTC-TCTA--CC-CTC  61520
+
+Query  3775   TAGCGTCTACCCTCCGCAAGCACCTTCCTCAGGGAGCGGCTCCAGCATCCACTCCTTCCC  3834
+              |   || | |||| |||||||||||||||||||||||||||||||||||||||| ||  |
+Sbjct  61519  T---GT-TCCCCT-CGCAAGCACCTTCCTCAGGGAGCGGCTCCAGCATCCACTC-TT--C  61468
+
+Query  3835   GGCGATGACGTTTCCTCCGTCGCAGACCGGGGCCGCGACCGG-GGCGAGTTCGTCTAGTT  3893
+              |||||||||||| |||| ||| |||| ||||||||||||||| |||||||||||||||||
+Sbjct  61467  GGCGATGACGTT-CCTC-GTC-CAGA-CGGGGCCGCGACCGGAGGCGAGTTCGTCTAGTT  61412
+
+Query  3894   GGACCCGAACGACAGCCCCCACGCCACCGGGCTGGCGCAAGCACCCAGCGCGGGCATATT  3953
+              |||||||||||||||||||||||| || ||||||||||| ||||  ||| ||| ||||  
+Sbjct  61411  GGACCCGAACGACAGCCCCCACGC-AC-GGGCTGGCGCA-GCAC--AGC-CGG-CATA--  61361
+
+Query  3954   TGCCGTCAATCCTCTCTCTGTCATCCCGTTTGCATAGATCCACACCGAAGACTGCCACAC  4013
+                ||  |  || ||||||    ||   ||||||||||||| || |||||||||| |||||
+Sbjct  61360  --CC--C--TC-TCTCTC----AT---GTTTGCATAGATC-AC-CCGAAGACTG-CACAC  61318
+
+Query  4014   GTGGAAGGC  4022
+              |||| ||||
+Sbjct  61317  GTGGCAGGC  61309
+
+
+ Score = 91.6 bits (49),  Expect = 6e-19
+ Identities = 126/157 (80%), Gaps = 30/157 (19%)
+ Strand=Plus/Minus
+
+Query  6191   CAGTCTTCAACGCCAGTTGGTTTGTACACAGCTCCGTGCCCACTCCGCAAGCCTTCTCCT  6250
+              |||||||| ||||||| ||| ||| ||||| || ||||||||||||||||||||||||  
+Sbjct  59277  CAGTCTTC-ACGCCAG-TGG-TTG-ACACA-CT-CGTGCCCACTCCGCAAGCCTTCTC--  59226
+
+Query  6251   TGGTCGCTTTTCAGTGGCCCATGACCGTCCACAAGGCGCCGCCCCCCAGCGCCTCCTTTC  6310
+                 |||| |||||  || ||   |   | ||| |   ||||  ||||||||||| |||||
+Sbjct  59225  ---TCGC-TTTCA-CGG-CC---A---T-CAC-A---GCCG--CCCCAGCGCCT-CTTTC  59186
+
+Query  6311   TGCGTGCTCTCGTGTGTGTCTGGGCACGCTATTCATC  6347
+              |||||||||||||||||||||||||| ||||| ||||
+Sbjct  59185  TGCGTGCTCTCGTGTGTGTCTGGGCA-GCTAT-CATC  59151
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2164968990
+
+
+  Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+    Posted date:  Unknown
+  Number of letters in database: 283,432
+  Number of sequences in database:  1
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

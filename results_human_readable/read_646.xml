@@ -1,0 +1,76 @@
+BLASTN 2.12.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+           1 sequences; 283,432 total letters
+
+
+
+Query= pos82935_82705_m131001_013033_42158_c1005197125500000018230808092714
+41_s1_p0/3858/3971_13290
+
+Length=9319
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+FR799588.2_Leishmania_donovani,_chromosome_1                          119     3e-27
+
+
+> FR799588.2_Leishmania_donovani,_chromosome_1
+Length=283432
+
+ Score = 119 bits (64),  Expect = 3e-27
+ Identities = 214/277 (77%), Gaps = 48/277 (17%)
+ Strand=Plus/Minus
+
+Query  3923   CGGCACCCTGATGGAAACACGACTTGTG-CATGGTTTCCACTAACCAAGCACTCAGGAAT  3981
+              ||||| || |||||||||| ||| |||| |||||||| |||||| | ||||||| |||| 
+Sbjct  82935  CGGCA-CC-GATGGAAACA-GAC-TGTGCCATGGTTT-CACTAA-C-AGCACTC-GGAA-  82885
+
+Query  3982   TTCTCTATAGATGCGTTGCAAAACCACCGAATAGGCGCTTTTGTAAACCCTATCTTGACC  4041
+               | |||||| |    ||| |||| || |||||||| ||||||||||||||||||||    
+Sbjct  82884  -T-TCTATA-A----TTG-AAAAACA-CGAATAGG-GCTTTTGTAAACCCTATCTT----  82839
+
+Query  4042   GCTTAGAGCGGGTTCTCCTGAATTGGGGCGTGCGAGTTTGACGAGAGAGGGTCCAAAAAG  4101
+                |||    | | |  | || ||  | || || || ||||||||||||||||||||||||
+Sbjct  82838  --TTA-TTTGTG-T-GCGTGTATGCGTGC-TGTGATTTTGACGAGAGAGGGTCCAAAAAG  82785
+
+Query  4102   AAAGGGCGAGGCTCGAGACACAATGTAAATCGGACTGGAGTCAAAGTTGAGCCCGCTGCA  4161
+              |||||| | ||||||||| | ||| ||||  ||||||||||||||||||||   || |||
+Sbjct  82784  AAAGGGAG-GGCTCGAGA-A-AAT-TAAA-GGGACTGGAGTCAAAGTTGAG---GC-GCA  82734
+
+Query  4162   AGAGCTATGTGCGTCGCTCCCGTGCGGCGCTA-GTTC  4197
+              | ||||| || | | ||||  || |||||||| ||||
+Sbjct  82733  A-AGCTA-GT-C-T-GCTC--GT-CGGCGCTACGTTC  82705
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2634862770
+
+
+  Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+    Posted date:  Unknown
+  Number of letters in database: 283,432
+  Number of sequences in database:  1
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

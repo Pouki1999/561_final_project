@@ -1,0 +1,108 @@
+BLASTN 2.12.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+           1 sequences; 283,432 total letters
+
+
+
+Query= pos277494_278147_m131001_013033_42158_c10051971255000000182308080927
+1441_s1_p0/21181/4203_9915
+
+Length=5712
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+FR799588.2_Leishmania_donovani,_chromosome_1                          604     1e-173
+
+
+> FR799588.2_Leishmania_donovani,_chromosome_1
+Length=283432
+
+ Score = 604 bits (327),  Expect = 1e-173
+ Identities = 625/748 (84%), Gaps = 103/748 (14%)
+ Strand=Plus/Plus
+
+Query  1491    gcaccgcacccgaacactgcccgAGCCCGTATCACTCCTGCACGTTCCTGTCAAACTCGC  1550
+               || |||| |||  |||||||||||||||||||| || | |||| ||||||||||||||||
+Sbjct  277491  GCGCCGCTCCCACACACTGCCCGAGCCCGTATC-CT-C-GCAC-TTCCTGTCAAACTCGC  277546
+
+Query  1551    GT-CGTCCGATAATTCCCGTTCATCCGCTGTTGGCAAACCACCCCTCGGCGCCTGTTTTG  1609
+               || ||| ||||||||  || |||| ||||| | ||  ||||||||||||||||||||| |
+Sbjct  277547  GTGCGT-CGATAATT--CGCTCAT-CGCTG-T-GC--ACCACCCCTCGGCGCCTGTTT-G  277597
+
+Query  1610    ATGTGTCCCGTTTCGTA-G-T-GTTTTGCTCTCATTATAAGAT-AGAATATCTCCATATC  1665
+                ||||| |||||||||| | | ||||||||||| |||| |||| |||||||||||||| |
+Sbjct  277598  -TGTGT-CCGTTTCGTAGGTTGGTTTTGCTCTC-TTAT-AGATCAGAATATCTCCATA-C  277652
+
+Query  1666    AA-CC-TCAGAAACACGAACGCCGCCCCCCATCCATTGCCTCCCCTCTAACGTACAGCCG  1723
+               || || ||||||  ||||| ||||||||||||| | ||||| |||||| ||||||| |||
+Sbjct  277653  AAGCCGTCAGAACAACGAA-GCCGCCCCCCATC-ACTGCCT-CCCTCT-ACGTACA-CCG  277707
+
+Query  1724    TTTGTTGGGCCttttttttCGTCGGCTGCAGAGGTAACCTGTGCCATCTGCGCAGACATA  1783
+                |||||  ||| |||||||||| ||||||||| |||||||||| ||||||||||||||||
+Sbjct  277708  -TTGTT--GCC-TTTTTTTCGT-GGCTGCAGA-GTAACCTGTG-CATCTGCGCAGACATA  277760
+
+Query  1784    CTCGACGATAAATAAACCCACCGGCAACACGAGACGATTCGACAGACACACGACACCCCA  1843
+               ||||            |||||| || |||| |||| | ||||||||||||||| | || |
+Sbjct  277761  CTCG------------CCCACC-GC-ACAC-AGAC-A-TCGACAGACACACGA-A-CCGA  277801
+
+Query  1844    AAGAAAC-CACGTGCGCGAGAAGAAGCAGTACAGGCCGCAACGGTG-CTTCTGTGAGAAT  1901
+               ||||||| ||||||| ||||||| ||||| ||||| ||| || ||| |||||||||||||
+Sbjct  277802  AAGAAACGCACGTGC-CGAGAAG-AGCAG-ACAGG-CGC-AC-GTGCCTTCTGTGAGAAT  277855
+
+Query  1902    CTTCCCACCCTGCTCATCTTCGGTTCCCCTCTCTTGTTCCACTGCAAATCGTTCTTCTCC  1961
+               || ||||  |||||||||||||||||||||||||| |||| |||||  ||||||| ||||
+Sbjct  277856  CT-CCCA--CTGCTCATCTTCGGTTCCCCTCTCTT-TTCCCCTGCA--TCGTTCT-CTCC  277908
+
+Query  1962    ACGGTGAGATACAATCCTGCGTCGATCCTCCGTCGTTCCACGAGTCGTTAAGTGGAAGTC  2021
+               |||| | | |||| || |||| ||||| | ||||||||| |||||||| | ||| |||||
+Sbjct  277909  ACGG-GTG-TACA-TC-TGCG-CGATC-T-CGTCGTTCCTCGAGTCGT-A-GTG-AAGTC  277958
+
+Query  2022    CTC-TCGCGGCCTATTTCCGTCTTGGCTTCCGCATATCGTCGCCTTCCTCCTTTGGCGTT  2080
+                || || || ||| |  | |||||| | ||||||||||||||||||||||||||||||||
+Sbjct  277959  -TCGTCTCG-CCT-T--C-GTCTTG-C-TCCGCATATCGTCGCCTTCCTCCTTTGGCGTT  278010
+
+Query  2081    ACTTACTGTCCCGCTCGTCCAAATAACGCCTCGACATCTGT-CTCCGTGTTTGTGCGAGT  2139
+               | ||||||||||||||||| |||||| | |||||||||||| ||||||| ||||||||||
+Sbjct  278011  A-TTACTGTCCCGCTCGTC-AAATAA-G-CTCGACATCTGTCCTCCGTGATTGTGCGAGT  278066
+
+Query  2140    GTCCTTTCTCTGTCGCTCACTTCCTCGGTGGCGTGTGGTGGTGGTTGGGCGCCACTTTTT  2199
+               | ||||||||||||  ||||||||||||| |||| |||||||||||  ||||| ||||||
+Sbjct  278067  G-CCTTTCTCTGTCT-TCACTTCCTCGGT-GCGTCTGGTGGTGGTT--GCGCCTCTTTTT  278121
+
+Query  2200    CAGAT-CCTGTAAGCGGTCCACCTCGTT  2226
+                |||| |||||| |  ||| ||||||||
+Sbjct  278122  GAGATTCCTGTA-GTTGTC-ACCTCGTT  278147
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1612892001
+
+
+  Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+    Posted date:  Unknown
+  Number of letters in database: 283,432
+  Number of sequences in database:  1
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

@@ -1,0 +1,104 @@
+BLASTN 2.12.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+           1 sequences; 283,432 total letters
+
+
+
+Query= pos278147_277486_m130930_231120_42158_c10051971255000000182308080927
+1440_s1_p0/77134/9534_15482
+
+Length=5948
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+FR799588.2_Leishmania_donovani,_chromosome_1                          773     0.0  
+
+
+> FR799588.2_Leishmania_donovani,_chromosome_1
+Length=283432
+
+ Score = 773 bits (418),  Expect = 0.0
+ Identities = 615/699 (88%), Gaps = 57/699 (8%)
+ Strand=Plus/Minus
+
+Query  3175    AACGAGGTGACAGCTACAGGAATCT-GAAAAGTGCCGCAACCACCACCACACGCACCGAG  3233
+               |||||||||||| ||||||||||||  ||||| | |||||||||||||| ||||||||||
+Sbjct  278147  AACGAGGTGACAACTACAGGAATCTCAAAAAGAGGCGCAACCACCACCAGACGCACCGAG  278088
+
+Query  3234    GGAAGTGAGGACAGAGAAAGACAACTCGCACAATACCACGGAGGACAGTATGGTCGAGGC  3293
+               | |||||| ||||||||||| || ||||||||||  |||||||||||| || ||||| ||
+Sbjct  278087  G-AAGTGAAGACAGAGAAAGGCA-CTCGCACAAT--CACGGAGGACAG-AT-GTCGA-GC  278035
+
+Query  3294    TTATTTGACGAGCGGGACAGTA-TAACGTCCAAGGAGGAACAGGCG-CGATATGCGGAGG  3351
+               |||||||||||||||||||||| ||||| | ||||||| | ||||| |||||||||||| 
+Sbjct  278034  TTATTTGACGAGCGGGACAGTAATAACGCCAAAGGAGG-A-AGGCGACGATATGCGGAGC  277977
+
+Query  3352    AAGAAGTAAGGCGAGACCGAGACTTCACTACGACTCG-TG-ACGACGAGACTGCGCAGAT  3409
+               |||| | ||||||||| ||||||||||||||||||||  | |||||||||  ||||||||
+Sbjct  277976  AAGACG-AAGGCGAGA-CGAGACTTCACTACGACTCGAGGAACGACGAGATCGCGCAGAT  277919
+
+Query  3410    GTACACCCGTGGAGAGAACGATGCAGTGGAAAAGAGAGG--AACCGAAGATGAGCAGTGG  3467
+               |||||||||||||||||||||||||| ||||||||||||  |||||||||||||||||||
+Sbjct  277918  GTACACCCGTGGAGAGAACGATGCAGGGGAAAAGAGAGGGGAACCGAAGATGAGCAGTGG  277859
+
+Query  3468    GAGATCCTCACAGAAGGCACGTGCGCCCCTGTCTGCATCTTCTCGGCACGTGCGTTTCTT  3527
+               ||||| |||||||||||||||||||||  ||||||| |||||||||||||||||||||||
+Sbjct  277858  GAGATTCTCACAGAAGGCACGTGCGCC--TGTCTGC-TCTTCTCGGCACGTGCGTTTCTT  277802
+
+Query  3528    TGAGGCTTTCGTGTGTCTGGTCGATGTCTGTGGTCGGT-GGCGAGTAAATGTCTGCGCTA  3586
+               |  ||  ||||||||||| |||||||||||||  |||| |||||||  |||||||||| |
+Sbjct  277801  T-CGG--TTCGTGTGTCT-GTCGATGTCTGTGTGCGGTGGGCGAGT--ATGTCTGCGC-A  277749
+
+Query  3587    GATGCACAGGTTACTCCTGCAGCTACCCGaaaaaaaaGGCAA-AAAGGTGGTACGTAGAG  3645
+               |||||||||||||||| ||||||  | || |||||||||||| || ||| ||||||||||
+Sbjct  277748  GATGCACAGGTTACTC-TGCAGC--CACG-AAAAAAAGGCAACAACGGT-GTACGTAGAG  277694
+
+Query  3646    GGAG-CAATGATgggggggCGGCGTCGTTG--C-GAC-GCTTGTATGGAGA-ATTCTGAT  3699
+               |||| || |||| |||||||||| ||||||  | ||| ||||||||||||| ||||||||
+Sbjct  277693  GGAGGCAGTGAT-GGGGGGCGGCTTCGTTGTTCTGACGGCTTGTATGGAGATATTCTGAT  277635
+
+Query  3700    CTAATAAGAGATGCAATAACCAA-CTAGTCGAAACGGACAAACAAACAGGCGCCGAGGGG  3758
+               || |||||||| |||| |||||| |||  ||||||||||| |||||||||||||||||||
+Sbjct  277634  CT-ATAAGAGA-GCAA-AACCAACCTA--CGAAACGGACACACAAACAGGCGCCGAGGGG  277580
+
+Query  3759    TG-TGCACAGCCGAATGAGCGAATTATCCGAC-CACGCGAGGTTTGACAGGAAGTGCGAG  3816
+               || ||||||| || |||||||||||||| ||| ||||||| |||||||||||||||||||
+Sbjct  277579  TGGTGCACAG-CG-ATGAGCGAATTATC-GACGCACGCGA-GTTTGACAGGAAGTGCGAG  277524
+
+Query  3817    GATAcgg-ctcgggcag-gtgcgggtgcgggcgtctgcg  3853
+               ||||||| ||||||||| ||| ||| |||| || |||||
+Sbjct  277523  GATACGGGCTCGGGCAGTGTGTGGGAGCGG-CGCCTGCG  277486
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1679776997
+
+
+  Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+    Posted date:  Unknown
+  Number of letters in database: 283,432
+  Number of sequences in database:  1
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

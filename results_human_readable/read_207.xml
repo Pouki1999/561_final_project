@@ -1,0 +1,177 @@
+BLASTN 2.12.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+           1 sequences; 283,432 total letters
+
+
+
+Query= pos202983_202727_m130930_231120_42158_c10051971255000000182308080927
+1440_s1_p0/26555/6132_14748
+
+Length=8616
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+FR799588.2_Leishmania_donovani,_chromosome_1                          333     1e-91
+
+
+> FR799588.2_Leishmania_donovani,_chromosome_1
+Length=283432
+
+ Score = 333 bits (180),  Expect = 1e-91
+ Identities = 249/277 (90%), Gaps = 26/277 (9%)
+ Strand=Plus/Minus
+
+Query  2681    CACACACACAC-CAGCAAGAAGGCGATGCACTACCCGGCGAGCACAGGATAACAGAGAGC  2739
+               ||||||||||| ||| |||||||| | ||| |    |||||||||||| |||||||||||
+Sbjct  202983  CACACACACACACAG-AAGAAGGC-ACGCA-T----GGCGAGCACAGG-TAACAGAGAGC  202932
+
+Query  2740    AAGCTGACCACCGAACAGGAGGCCCAACGACAAGAAG-TGATGGGTCAATGAACGTAGAG  2798
+                |||||| ||||||||||||||||||||||||||||| ||||||||| ||||||||||||
+Sbjct  202931  -AGCTGA-CACCGAACAGGAGGCCCAACGACAAGAAGGTGATGGGTC-ATGAACGTAGAG  202875
+
+Query  2799    AGAC-GAAAGAAAGAGAGGAAGAGGACCATGCATCCACGCGTATCGCCGA-CCCG-CATC  2855
+               |||| ||||||||||||||||||||||||||||||||||||| ||||||| |||| ||||
+Sbjct  202874  AGACAGAAAGAAAGAGAGGAAGAGGACCATGCATCCACGCGT-TCGCCGAGCCCGCCATC  202816
+
+Query  2856    CGCCATGGACAATGCAGCAGCAAATGGTGATGATTGCGTGGACCGACTCGACCATCGTTA  2915
+               || ||||||||| |||||||| ||||||||||| || ||||| |  || |||||||||||
+Sbjct  202815  CG-CATGGACAA-GCAGCAGC-AATGGTGATGA-TG-GTGGA-C-TCT-GACCATCGTTA  202764
+
+Query  2916    CATCCCTGCGCGTGTGTGTATAGGTACCTCC-TTCCC  2951
+               ||||||||||||||||||||||||||||||| |||||
+Sbjct  202763  CATCCCTGCGCGTGTGTGTATAGGTACCTCCCTTCCC  202727
+
+
+ Score = 281 bits (152),  Expect = 4e-76
+ Identities = 280/333 (84%), Gaps = 44/333 (13%)
+ Strand=Plus/Minus
+
+Query  4794    AAGCTTGACGTTGTGGTTTGTCAGACGCGTGTGGCGGTGCGTCCGAGGGCGCAAGGGAGC  4853
+               |||||||||||||||||| |||||||  |||| |||||  |  |  ||| ||   | || 
+Sbjct  201472  AAGCTTGACGTTGTGGTT-GTCAGACCGGTGT-GCGGT--G--C--GGG-GC--TGAAG-  201425
+
+Query  4854    GAACGGGGTGTTGCGTGGCCCGCCGCGTCCTGTGTGCGGCCGCTGC-G-CGAGAAGTCGA  4911
+               | |||||||| |||  ||  ||  | || ||||||||||||||||| | |||||||||||
+Sbjct  201424  G-ACGGGGTG-TGC--GG--CG--GGGT-CTGTGTGCGGCCGCTGCCGCCGAGAAGTCGA  201374
+
+Query  4912    TCCTTCCACTAAGCCGCGCGCTGCGC-CCGTTGGGGTGGAGGAGTGACTTGTCGGAGGTG  4970
+                  |||||| |||||| ||||  |||  || ||||||||| ||| |  ||||||| ||||
+Sbjct  201373  ---TTCCAC-AAGCCG-GCGC--CGCTGCG-TGGGGTGGA-GAG-G--TTGTCGGCGGTG  201326
+
+Query  4971    CCGGCCGACACGCACGCTGCTTGGGGCCGCGATG-CCTAGCGCCATTCACCGCCGCGGCC  5029
+               |||  ||||||| ||||||||| ||| ||||||| |||||||||||||||||||||||||
+Sbjct  201325  CCGAGCGACACG-ACGCTGCTT-GGG-CGCGATGCCCTAGCGCCATTCACCGCCGCGGCC  201269
+
+Query  5030    GCCCGGTACCCGCGCCAGGGCGGTTCC-AAAG-CCCCGGGGTAGAGGTCGAGCGAGGCGG  5087
+               ||| |||||||||||||||||| |||| |||| |||||||||||||||||||||||||||
+Sbjct  201268  GCC-GGTACCCGCGCCAGGGCG-TTCCAAAAGCCCCCGGGGTAGAGGTCGAGCGAGGCGG  201211
+
+Query  5088    CGCTGCTGCCGCGGCTGATGGAGTTGCTGCACG  5120
+               |||||||||||||||||||||||||||||||||
+Sbjct  201210  CGCTGCTGCCGCGGCTGATGGAGTTGCTGCACG  201178
+
+
+ Score = 204 bits (110),  Expect = 8e-53
+ Identities = 402/523 (77%), Gaps = 100/523 (19%)
+ Strand=Plus/Minus
+
+Query  3252    CACAGAACCATGCACTCAGAATGAGTTACTTGAC-GTGGGCT-GGGGAGGGGTGCGTTCC  3309
+               |||||||  |||||| |  |||||  ||| |||| ||||||| ||||||||| ||||| |
+Sbjct  202554  CACAGAA--ATGCAC-C--AATGA--TAC-TGACGGTGGGCTGGGGGAGGGG-GCGTT-C  202505
+
+Query  3310    GCGGGCTTGCTCGTGACGCACGGGCGTTGGGCAATTATGGGATGTAGCGGCCTGCCCCCT  3369
+               || ||| ||  | |   | ||||||||||||  |||||||||||| ||||||   |||||
+Sbjct  202504  GC-GGC-TG--C-T---G-ACGGGCGTTGGG--ATTATGGGATGTCGCGGCC---CCCCT  202459
+
+Query  3370    CTTCCTGGTGAATCC-TGACAACGCTCTCGTCGTGCCAAGGCAGCTCCGATGACGAGCGA  3428
+               | | |   |   ||| |||||||||||||||||||||||||||| | |||||||||||||
+Sbjct  202458  C-T-C---T--CTCCTTGACAACGCTCTCGTCGTGCCAAGGCAG-T-CGATGACGAGCGA  202408
+
+Query  3429    GGGGGGAGGGGAGGTCCTTGGGGTAGCAGCATCAGCGGGGTAGAATTAACACACAAATGA  3488
+               |||||||||| |||| ||||||||||||||||||||||| ||||| ||||||||| ||||
+Sbjct  202407  GGGGGGAGGG-AGGT-CTTGGGGTAGCAGCATCAGCGGG-TAGAA-TAACACACAGATGA  202352
+
+Query  3489    AGGACCAGTGGGGATCGGAAAGGAGCTCGGGGAAGTAGCGAAACCCACAGCAGCGAGATA  3548
+               |  |  || |||  | || |||||| ||||||||| || | |  | ||| ||| ||||||
+Sbjct  202351  AA-A--AG-GGG--T-GG-AAGGAGGTCGGGGAAG-AG-GCACACAACA-CAG-GAGATA  202304
+
+Query  3549    GCCGACAGGGTGGGTCACCGAGCCGGCGTTTGATGAAAATAGCGACGACAGCGCGCGCAA  3608
+                  |  |||| |  | |  | || ||  || || |   ||||||||||||||| ||||| 
+Sbjct  202303  AGGGGTAGGG-G--T-A--G-GC-GG--TT-GA-G---ATAGCGACGACAGCG-GCGCA-  202261
+
+Query  3609    CACGCTGTAGGTGGCGGTGTCGGCAGTTGCCGGGCGAGATGGGTGC-GTCTAAGCGATGA  3667
+               |  || ||||||||||||| ||||||| || ||||| | ||||||| ||| ||| || ||
+Sbjct  202260  C--GC-GTAGGTGGCGGTGGCGGCAGT-GC-GGGCG-G-TGGGTGCCGTC-AAG-GAGGA  202210
+
+Query  3668    GCGAC-AAGACCCAAGATGGATCCCAAGAGGTATGACGTTTTGGGAACTCTGCATCGGAG  3726
+               ||||| |||| ||  ||||| ||  ||| |  | ||||    | |||| | | |||||||
+Sbjct  202209  GCGACCAAGAACC--GATGG-TC--AAG-G--A-GACG----GAGAAC-C-GAATCGGAG  202165
+
+Query  3727    TACGCGCCCAGAGGAACGTGGAGGCCCGGA-AAAAGGCAAAGA  3768
+                 |||| ||||||||||||||||||  ||| ||||||||| ||
+Sbjct  202164  G-CGCG-CCAGAGGAACGTGGAGGC--GGAGAAAAGGCAACGA  202126
+
+
+ Score = 117 bits (63),  Expect = 1e-26
+ Identities = 70/73 (96%), Gaps = 2/73 (3%)
+ Strand=Plus/Minus
+
+Query  3126    GCAATGCCTGCGCCCGTCTG-CTGGCTGTCGCTGGCGACTGTGAGGGAGGATGAAGAAGA  3184
+               ||||||| |||||||||||| ||||||||||||||||||||||||| |||||||||||||
+Sbjct  202633  GCAATGCATGCGCCCGTCTGTCTGGCTGTCGCTGGCGACTGTGAGG-AGGATGAAGAAGA  202575
+
+Query  3185    CGGAAACACACAC  3197
+               |||||||||||||
+Sbjct  202574  CGGAAACACACAC  202562
+
+
+ Score = 91.6 bits (49),  Expect = 6e-19
+ Identities = 52/53 (98%), Gaps = 1/53 (2%)
+ Strand=Plus/Minus
+
+Query  692     GCGACAGAGATGCATCCGAGAAGCTCAG-CAGACGCAGCTTCGAGCTCCGCGG  743
+               |||||||||||||||||||||||||||| ||||||||||||||||||||||||
+Sbjct  204326  GCGACAGAGATGCATCCGAGAAGCTCAGGCAGACGCAGCTTCGAGCTCCGCGG  204274
+
+
+ Score = 78.7 bits (42),  Expect = 5e-15
+ Identities = 54/59 (92%), Gaps = 4/59 (7%)
+ Strand=Plus/Minus
+
+Query  2539    CAGAAGAAAGCACCGGCCTGGAGCATACACACACACAGAGACATCTTATACGTGAGACC  2597
+               |||||||||| | ||| ||||||||||||||||||||||||||||| ||| ||||||||
+Sbjct  203085  CAGAAGAAAG-A-CGG-CTGGAGCATACACACACACAGAGACATCT-ATAGGTGAGACC  203031
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2435625540
+
+
+  Database: User specified sequence set (Input:
+C:\Users\gogom\PycharmProjects\561_final_project\chromosomes\chromos
+ome_0.fa).
+    Posted date:  Unknown
+  Number of letters in database: 283,432
+  Number of sequences in database:  1
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5
