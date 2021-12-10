@@ -86,8 +86,8 @@ def main():
     #finding the appropriate c for hash function of the form h(x) = ((a*x)+b)%c
     #where c is the next largest prime greater than the number of k-mers in the longest of the two reads
     #where a and b are random integers in the interval [0,c]
-    max_len = max( len(kmer_dict_0.keys()), len(kmer_dict_1.keys()) )
-    c = nextprime( max_len )
+    max_len = max(len(kmer_dict_0.keys()), len(kmer_dict_1.keys()))
+    c = nextprime(max_len)
     if c < num_hash_functions:
         c = nextprime(num_hash_functions)
     #finding the a's and b's for the above mentioned hash functions

@@ -5,7 +5,7 @@ read_A = 'AATACGATCGCGGGATAT'
 read_B = 'CGAATCGACTTTAACCCA'
 
 
-def count_n_locate_kmers(read, read_id, k, kmer_count={}, kmer_locations={}, spacing=1):
+def count_n_locate_kmers(read, read_id, k=10, kmer_count={}, kmer_locations={}, spacing=1):
     # TODO: adapt method to have customizable length spacing between each kmer
     """
     :param read: string of nucleotides making up a DNA read
@@ -16,6 +16,7 @@ def count_n_locate_kmers(read, read_id, k, kmer_count={}, kmer_locations={}, spa
     :param spacing: number of nucleotides shifted between each kmer
     :return: two dicts giving the frequency and locations in the reads of each kmer
     """
+    print(len(kmer_count))
     i = 0
     # iterate once per amount of kmers in the input sequence, given the spacing
     while i < (len(read) - (k * spacing) + 1):
@@ -41,7 +42,7 @@ def find_solid_kmers(k_mers, kmer_locations, theta=0.9):
     :return: two dicts giving the frequency and locations in the reads of each kmer that is deemed solid f_min < frequency(kmer) < f_max
     """
     # removing all the k_mers that have frequency 1
-    no_singletons = { k: k_mers[k] for k in k_mers if k_mers[k] > 1}
+    no_singletons = {k: k_mers[k] for k in k_mers if k_mers[k] > 1}
     sum_h = len(no_singletons)
     sum_f, f_max = 0, 2
     # determining the value of f_max
@@ -54,19 +55,19 @@ def find_solid_kmers(k_mers, kmer_locations, theta=0.9):
     # return 2, f_max, solid_kmers
     return solid_kmers, solid_kmer_locations
 
+if __name__ == '__main__':
+    kmer_size = 3
+    kmer_count, kmer_locations = count_n_locate_kmers(read_A, 'A', kmer_size)
+    kmer_count, kmer_locations = count_n_locate_kmers(read_B, 'B', kmer_size, kmer_count=kmer_count, kmer_locations=kmer_locations)
+    solid_kmers, solid_kmer_locations = find_solid_kmers(kmer_count, kmer_locations)
+    print("solid_kmers=", solid_kmers)
 
-kmer_size = 3
-kmer_count, kmer_locations = count_n_locate_kmers(read_A, 'A', kmer_size)
-kmer_count, kmer_locations = count_n_locate_kmers(read_B, 'B', kmer_size, kmer_count=kmer_count, kmer_locations=kmer_locations)
-solid_kmers, solid_kmer_locations = find_solid_kmers(kmer_count, kmer_locations)
-print("solid_kmers=", solid_kmers)
-
-#testing whether the kmer locating process succeeded
-kmer = 'CGA'
-print(kmer_count[kmer] == len(kmer_locations[kmer]))
-print("Truth: CGA, predicted:")
-for i in range(len(kmer_locations[kmer])):
-    if kmer_locations[kmer][i][0] == 'A':
-        print(read_A[kmer_locations[kmer][i][1]:kmer_locations[kmer][i][1] + kmer_size])
-    else:
-        print(read_B[kmer_locations[kmer][i][1]:kmer_locations[kmer][i][1] + kmer_size])
+    #testing whether the kmer locating process succeeded
+    kmer = 'CGA'
+    print(kmer_count[kmer] == len(kmer_locations[kmer]))
+    print("Truth: CGA, predicted:")
+    for i in range(len(kmer_locations[kmer])):
+        if kmer_locations[kmer][i][0] == 'A':
+            print(read_A[kmer_locations[kmer][i][1]:kmer_locations[kmer][i][1] + kmer_size])
+        else:
+            print(read_B[kmer_locations[kmer][i][1]:kmer_locations[kmer][i][1] + kmer_size])

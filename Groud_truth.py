@@ -2,6 +2,8 @@ import os
 from Bio import SeqIO
 from Bio.Blast.Applications import NcbiblastnCommandline
 from Bio.Blast import NCBIXML
+import torch
+
 if __name__ == '__main__':
 
     reads = []
@@ -24,7 +26,9 @@ if __name__ == '__main__':
     #         SeqIO.write(record, open(os.path.join('chromosomes', 'chromosome_' + str(n) + '.fa'), 'w'), 'fasta')
     #         print('create file for chromosome ' + str(n))
     #     n += 1
-    #
+
+
+
     blastn_path = r"C:/Users/seraphinbassas/Documents/Mcgill 2021-2022/COMP-561/ncbi-blast-2.12.0+/bin/blastn"
     subject_path = r"C:/Users/seraphinbassas/PycharmProjects/561_final_project/chromosomes/chromosome_0.fa"
     for file in os.listdir('reads'):
