@@ -25,7 +25,7 @@ def get_kmer_list( read, k, spacing=1):
     i = 0
     kmer_dict = {}
     # iterate once per amount of kmers in the input sequence, given the spacing
-    while i < int(math.ceil( ( len(read) - k + 1) / spacing ) ):
+    while i < int(math.ceil((len(read) - k + 1) / spacing)):
         curr = read[i:i + k]
         kmer_dict[curr] = hash(str(curr))
         i += spacing
@@ -59,13 +59,13 @@ def generate_hash_functions(how_many, limit):
         while num in b:
             num = randint(0, limit)
         b.append(num)
-    return list( [ list(x) for x in zip(a, b) ] )
+    return list([list(x) for x in zip(a, b)])
 
 #returns the hash set of the input set of kmer hash values
 def get_hash_set(a, b, c, kmers):
     hash_set = []
     for kmer in kmers:
-        hash_set.append( ( (a*kmer)+b) %c )
+        hash_set.append(((a*kmer)+b) %c)
     return hash_set
 
 #returns the hash sketch of the input set of hash sets for a sequence
@@ -94,14 +94,14 @@ def main():
     hash_func_params = generate_hash_functions(num_hash_functions, c)
     # print("hash_func_params=", hash_func_params )
     hash_set_0, hash_set_1 = [], []
-    cur_values_0, cur_values_1 = list(kmer_dict_0.values()), list( kmer_dict_1.values() )
+    cur_values_0, cur_values_1 = list(kmer_dict_0.values()), list(kmer_dict_1.values())
     hash_set_0.append(cur_values_0)
     hash_set_1.append(cur_values_1)
     for params in hash_func_params:
         cur_values_0 = get_hash_set(params[0], params[1], c, cur_values_0)
-        hash_set_0.append( cur_values_0 )
+        hash_set_0.append(cur_values_0)
         cur_values_1 = get_hash_set(params[0], params[1], c, cur_values_1)
-        hash_set_1.append( cur_values_1 )
+        hash_set_1.append(cur_values_1)
     sketch_0 = get_hash_sketch(hash_set_0)
     sketch_1 = get_hash_sketch(hash_set_1)
 
