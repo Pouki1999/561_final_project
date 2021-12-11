@@ -2,80 +2,140 @@ import pandas as pd
 import os
 import minHash
 import kmer_approach_joint as kmer_file
+import numpy as np
 
 if __name__ == '__main__':
 
+    df = pd.read_csv('dataset.csv')
+    print(df)
+
+    train_percentage = 0.8
+
+    idx_list = []
+    for i in range(df.shape[0]):
+        idx_list.append(i)
+
+    seed = 1
+    np.random.seed(seed=seed)
+    train_idx = []
+    test_idx = []
+    for idx in idx_list:
+        if np.random.uniform(0.0, 1.0) < train_percentage:
+            train_idx.append(idx)
+        else:
+            test_idx.append(idx)
+    print(len(train_idx))
+    print(len(test_idx))
+    #print(train_idx)
+    #print(test_idx)
+
+    new_train = []
+    for idx in train_idx:
+        if np.random.uniform(0.0, 1.0) <= 0.1:
+            new_train.append(idx)
+
+    new_test = []
+    for idx in test_idx:
+        if np.random.uniform(0.0, 1.0) <= 0.1:
+            new_test.append(idx)
+
+
+    print(len(new_train))
+    print(len(new_test))
+
+    print(str(df['read_1'][idx]) + ',' + str(df['read_2'][idx]) + ',' + str(df['overlap'][idx]))
+
+    with open('test_dataset.csv', 'w') as test_file:
+        test_file.write('read_1,read_2,overlap' + '\n')
+        for idx in new_test:
+            test_file.write(str(df['read_1'][idx]) + ',' + str(df['read_2'][idx]) + ',' + str(df['overlap'][idx]) + '\n')
+
+    with open('train_dataset.csv', 'w') as train_file:
+        train_file.write('read_1,read_2,overlap' + '\n')
+        for idx in new_train:
+            train_file.write(str(df['read_1'][idx]) + ',' + str(df['read_2'][idx]) + ',' + str(df['overlap'][idx]) + '\n')
+
+
+    """
+    
+    train_idx = list()
+    test_idx = list()
+    for idx in idx_list:
+        if np.random.uniform(0.0, 1.0) < train_percentage:
+            train_idx.append(idx)
+        else:
+            test_idx.append(idx)
+    
     label_df = pd.read_csv('dataset.csv', dtype=str)
+    #get all reads in dataset
     available_reads = []
-    for i in range(label_df.shape[0]):
-        print(i)
+    for i in range(int(label_df.shape[0]/10)):
+        print('try')
         if label_df['read_1'][i] not in available_reads:
+            print(i)
             available_reads.append(label_df['read_1'][i])
         if label_df['read_2'][i] not in available_reads:
+            print(i)
             available_reads.append(label_df['read_2'][i])
 
-    print(available_reads)
+    max_kmers = 0
+    kmer_dict_list = []
 
-    dataset = {}
-    dataset['read_1'] = []
-    dataset['read_2'] = []
-    dataset['overlap'] = []
-    dataset['vector_1'] = []
-    dataset['vector_2'] = []
-
-    solid_kmers_per_pair = []
-
+    k = 16
+    num_hash_functions = 200
+    #determine max number of kmers in a read (to find c value for hash functions)
     for read in available_reads:
-        read1 = label_df['read_1'][i]
-        read2 = label_df['read_2'][i]
-        seq1 = ''
-        with open(os.path.join('reads', 'read_{}.fa'.format(read1)), 'r') as file:
+        print(read)
+        seq = ''
+        with open(os.path.join('reads', 'read_{}.fa'.format(read)), 'r') as file:
             for line in file.readlines():
                 if line[0] != '>':
-                    seq1 += line.replace('\n', '')
-        seq2 = ''
-        with open(os.path.join('reads', 'read_{}.fa'.format(read2)), 'r') as file:
-            for line in file.readlines():
-                if line[0] != '>':
-                    seq2 += line.replace('\n', '')
-        print(len(seq1))
-        print(len(seq2))
-        k = 16
-        num_hash_functions = 200
+                    seq += line.replace('\n', '')
 
-        kmer_dict_1 = minHash.get_kmer_list(seq1, k)
-        kmer_dict_2 = minHash.get_kmer_list(seq2, k)
+        kmer_dict = minHash.get_kmer_list(seq, k)
+        kmer_dict_list.append(kmer_dict)
 
-        max_len = max(len(kmer_dict_1.keys()), len(kmer_dict_2.keys()))
-        c = minHash.nextprime(max_len)
-        if c < num_hash_functions:
-            c = minHash.nextprime(num_hash_functions)
-        hash_func_params = minHash.generate_hash_functions(num_hash_functions, c)
-        hash_set_1, hash_set_2 = [], []
-        cur_values_1, cur_values_2 = list(kmer_dict_1.values()), list(kmer_dict_2.values())
+        if len(kmer_dict) > max_kmers:
+            max_kmers = len(kmer_dict)
 
-        hash_set_1.append(cur_values_1)
-        hash_set_2.append(cur_values_2)
+    print('max is:', max_kmers)
+    sketch_list = []
+
+    # determine c (next biggest prime and parameters a and b for each hash function)
+    c = minHash.nextprime(max_kmers)
+    if c < num_hash_functions:
+        c = minHash.nextprime(num_hash_functions)
+    hash_func_params = minHash.generate_hash_functions(num_hash_functions, c)
+
+    os.makedirs('sketches', exist_ok=True)
+
+    for i, read in enumerate(available_reads):
+
+        kmer_dict = kmer_dict_list[i]
+
+        hash_set = []
+        cur_values = list(kmer_dict.values())
+
+        hash_set.append(cur_values)
 
         for params in hash_func_params:
-            cur_values_1 = minHash.get_hash_set(params[0], params[1], c, cur_values_1)
-            hash_set_1.append(cur_values_1)
-            cur_values_2 = minHash.get_hash_set(params[0], params[1], c, cur_values_2)
-            hash_set_2.append(cur_values_2)
+            cur_values = minHash.get_hash_set(params[0], params[1], c, cur_values)
+            hash_set.append(cur_values)
 
         #print(hash_set_1)
-        #print(hash_set_2)
 
-        sketch_1 = minHash.get_hash_sketch(hash_set_1)
-        sketch_2 = minHash.get_hash_sketch(hash_set_2)
+        sketch = minHash.get_hash_sketch(hash_set)
 
-        print(list(sketch_1))
-        print(list(sketch_2))
+        print(str(list(sketch)))
+
+        outfile = open(os.path.join('sketches', 'sketch_{}.txt'.format(read)), 'w')
+        outfile.write(str(list(sketch)))
+        outfile.close()
+
+    """
 
 
-
-
-        """
+    """
         kmers_count1, kmers_pos1 = {}, {}
         kmers_count1, kmers_pos1 = kmer_file.count_n_locate_kmers(read=seq1, read_id=read1,
                                                              kmer_count=kmers_count1,
